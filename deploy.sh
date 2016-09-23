@@ -8,7 +8,7 @@ BRANCHDIR=$BASEDIR$DIR
 if [ ! -d "$BRANCHDIR" ]; then
 	git clone https://github.com/sepplsche/skrupel.git $BRANCHDIR
 	
-	if [ $NAME != "master" ]; then
+	if [ "$NAME" != "master" ]; then
 		cd $BRANCHDIR
 		sed -i "s/\$login=\"skrupel\"/\$login=\"skrupel-dev\"/g" inc.conf.php
 		sed -i "s/\$password=\"skrupel\"/\$password=\"skrupel-dev\"/g" inc.conf.php
