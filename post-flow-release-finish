@@ -18,8 +18,8 @@ BRANCH=$3
 
 # Implement your script here.
 IP=$(curl https://raw.githubusercontent.com/sepplsche/ci/master/ip.txt)
-curl http://$IP:8000/ci/?task=undeploy&branch=$BRANCH&dir=-beta
-curl http://$IP:8000/ci/?task=deploy&branch=master
+curl http://$IP:8000/ci/?task=undeploy\&branch=$BRANCH\&dir=-beta
+curl http://$IP:8000/ci/?task=deploy\&branch=master
 
 echo 
 echo 
