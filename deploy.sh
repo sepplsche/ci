@@ -18,6 +18,7 @@ fi
 
 cd $BRANCHDIR
 git stash
+git pull -p
 git checkout $NAME
 git pull -p
 git stash pop

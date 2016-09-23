@@ -9,8 +9,10 @@ while [ true ]; do
 
 	if [ "$LASTIP" != "$NEWIP" ]; then
 		echo $NEWIP > ip.txt
-		git commit -a -m "ip update 1"
+		git commit -a -m "ip update"
 		git push
+		
+		# inform someone about that update
 	fi
 	
 	sleep 5m

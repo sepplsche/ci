@@ -16,7 +16,7 @@ if (!$task || !$branch)
 
 $dir = "";
 if ($branch == "master") {}
-if ($branch == "release") $dir = "-beta";
+if (substr($branch, 0, 8) === "release/") $dir = "-beta";
 if ($branch == "develop") $dir = "-alpha";
 if (substr($branch, 0, 8) === "feature/") $dir = "-".$branch;
 

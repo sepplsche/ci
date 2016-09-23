@@ -17,5 +17,15 @@ ORIGIN=$2
 BRANCH=$3
 
 # Implement your script here.
-curl http://5.149.21.212:8000/ci/?undeploy=$BRANCH
-curl http://5.149.21.212:8000/ci/?deploy=develop
+IP=$(curl https://raw.githubusercontent.com/sepplsche/ci/master/ip.txt)
+curl http://$IP:8000/ci/?undeploy=$BRANCH
+curl http://$IP:8000/ci/?deploy=develop
+
+echo 
+echo 
+echo ---SEPPL-CI---
+echo Feature $NAME wird soeben undeployt und Alpha wird redeployt.
+echo Der neue Stand ist in wenigen Sekunden errechbar unter:
+echo http://$IP:8000/skrupel-alpha
+echo ---SEPPL-CI---
+echo 

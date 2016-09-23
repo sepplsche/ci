@@ -17,4 +17,13 @@ ORIGIN=$2
 BRANCH=$3
 
 # Implement your script here.
-curl http://5.149.21.212:8000/ci/?deploy=$BRANCH
+IP=$(curl https://raw.githubusercontent.com/sepplsche/ci/master/ip.txt)
+curl http://$IP:8000/ci/?deploy=$BRANCH
+
+echo 
+echo 
+echo ---SEPPL-CI---
+echo Release $NAME wird soeben deployt und ist in wenigen Sekunden erreichbar unter:
+echo http://$IP:8000/skrupel-beta
+echo ---SEPPL-CI---
+echo 
