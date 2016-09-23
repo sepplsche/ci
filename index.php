@@ -1,24 +1,10 @@
 <?php
-$task = "";
-$branch = "";
-
-if (isset($_GET["deploy"])) {
-	$task = "deploy";
-	$branch = $_GET["deploy"];
-}
-if (isset($_GET["undeploy"])) {
-	$task = "undeploy";
-	$branch = $_GET["undeploy"];
-}
+$task = isset($_GET["task"]) ? $_GET["task"] : "";
+$branch = isset($_GET["branch"]) ? $_GET["branch"] : "";
+$dir = isset($_GET["dir"]) ? $_GET["dir"] : "";
 
 if (!$task || !$branch)
 	return;
-
-$dir = "";
-if ($branch == "master") {}
-if (substr($branch, 0, 8) === "release/") $dir = "-beta";
-if ($branch == "develop") $dir = "-alpha";
-if (substr($branch, 0, 8) === "feature/") $dir = "-".$branch;
 
 shell_exec("c:/PortableGit/git-bash.exe $task.sh $branch $dir");
 ?>
