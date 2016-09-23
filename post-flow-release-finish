@@ -25,7 +25,7 @@ echo
 echo 
 echo ---SEPPL-CI---
 echo Release $NAME wird soeben undeployt und Skrupel wird redeployt.
-echo Der neue Stand ist in wenigen Sekunden errechbar unter:
+echo Der neue Stand ist in wenigen Sekunden erreichbar unter:
 echo http://$IP:8000/skrupel
 echo ---SEPPL-CI---
 echo 

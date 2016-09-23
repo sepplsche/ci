@@ -25,7 +25,7 @@ echo
 echo 
 echo ---SEPPL-CI---
 echo Feature $NAME wird soeben undeployt und Alpha wird redeployt.
-echo Der neue Stand ist in wenigen Sekunden errechbar unter:
+echo Der neue Stand ist in wenigen Sekunden erreichbar unter:
 echo http://$IP:8000/skrupel-alpha
 echo ---SEPPL-CI---
 echo 
