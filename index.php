@@ -6,5 +6,8 @@ $dir = isset($_GET["dir"]) ? $_GET["dir"] : "";
 if (!$task || !$branch)
 	return;
 
+if ($task == "undeploy" && $branch == "master")
+	return;
+
 shell_exec("c:/PortableGit/git-bash.exe $task.sh $branch $dir");
 ?>
