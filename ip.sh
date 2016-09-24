@@ -16,7 +16,7 @@ while [ true ]; do
 		LASTIP=$NEWIP
 		
 		echo 
-		echo ---ip updated---
+		echo ---$(date): ip updated---
 		echo 
 	fi
 
