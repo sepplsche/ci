@@ -14,7 +14,10 @@ while [ true ]; do
 		git commit -a -m "ip updated"
 		git push
 		LASTIP=$NEWIP
-		echo ip updated
+		
+		echo 
+		echo ---ip updated---
+		echo 
 	fi
 
 	sleep 5m
