@@ -13,6 +13,9 @@ if [ ! -d "$BRANCHDIR" ]; then
 		sed -i "s/\$login=\"skrupel\"/\$login=\"skrupel-dev\"/g" inc.conf.php
 		sed -i "s/\$password=\"skrupel\"/\$password=\"skrupel-dev\"/g" inc.conf.php
 		sed -i "s/\$database=\"skrupel\"/\$database=\"skrupel-dev\"/g" inc.conf.php
+		
+		ESCAPEDNAME=$(echo "$NAME" | sed 's/\//\\\//g')
+		sed -i "s/\/\/ini_set('error_log', 'C:\/skrupel\/log\/log.txt');/ini_set('error_log', 'c:\/xampp\/htdocs\/skrupel-$ESCAPEDNAME\/log.txt');/g" inc.conf.php
 	fi
 fi
 
