@@ -23,7 +23,8 @@ curl http://$IP:8000/ci/?task=deploy\&branch=$BRANCH\&dir=-$BRANCH
 echo
 echo 
 echo ---SEPPL-CI---
-echo Feature $NAME wird soeben deployt und ist in wenigen Sekunden erreichbar unter:
-echo http://$IP:8000/skrupel-feature/$NAME
+echo Feature $NAME wird deployt...
+echo URL: http://$IP:8000/skrupel-feature/$NAME
+echo DB: http://$IP:8000/phpMyAdmin
 echo ---SEPPL-CI---
 echo 
