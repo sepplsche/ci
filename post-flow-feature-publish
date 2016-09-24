@@ -25,6 +25,6 @@ echo
 echo ---SEPPL-CI---
 echo Feature $NAME wird deployt...
 echo URL: http://$IP:8000/skrupel-feature/$NAME
-echo DB: http://$IP:8000/phpMyAdmin
+echo DB/User/Pass: skrupel-dev unter http://$IP:8000/phpMyAdmin
 echo ---SEPPL-CI---
 echo 
