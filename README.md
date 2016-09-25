@@ -1,7 +1,9 @@
 # ci
 
 ###Using git-flow with ci hooks:
-ci hoooks works currently only for skrupel git repository: "https://github.com/sepplsche/skrupel.git"
+
+> ci hoooks works currently only for skrupel git repository: "https://github.com/sepplsche/skrupel.git"
+
 - download Portable Git from: https://github.com/git-for-windows/git/releases/download/v2.10.0.windows.1/PortableGit-2.10.0-64-bit.7z.exe
 - extract Protable Git (selfextracting archive)
 - clone skrupel git repository
