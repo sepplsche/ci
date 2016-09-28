@@ -24,7 +24,7 @@ ci hooks are executed when calling "git flow feature|release publish|finish", ca
   git config --global --add difftool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
   git config --global --add difftool.kdiff3.trustExitCode false
 ```
-- if need to resolve merge conflicts call: git mergetool
+- resolve merge conflicts with: git mergetool
 
 ###Using credetial helper on Windows for Git:
 - call: git config --global credential.helper wincred
