@@ -16,13 +16,13 @@ ci hooks are executed when calling "git flow feature|release publish|finish", ca
 - donwload and install kdiff3 from: https://sourceforge.net/projects/kdiff3/files/
 - config git to use kdiff3 as merge tool and diff tool:
 ```
-  git config --global --add merge.tool kdiff3
-  git config --global --add mergetool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
-  git config --global --add mergetool.kdiff3.trustExitCode false
-  
-  git config --global --add diff.guitool kdiff3
-  git config --global --add difftool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
-  git config --global --add difftool.kdiff3.trustExitCode false
+git config --global --add merge.tool kdiff3
+git config --global --add mergetool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
+git config --global --add mergetool.kdiff3.trustExitCode false
+
+git config --global --add diff.guitool kdiff3
+git config --global --add difftool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
+git config --global --add difftool.kdiff3.trustExitCode false
 ```
 - resolve merge conflicts with:
 ```
