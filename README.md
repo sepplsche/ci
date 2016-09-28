@@ -1,4 +1,5 @@
 # ci
+*continous integration*
 
 ###Using git-flow with ci hooks:
 
