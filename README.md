@@ -29,7 +29,6 @@ ci hooks are executed when calling "git flow feature|release publish|finish", ca
 git mergetool
 ```
 ###Using credetial helper on Windows for Git:
-- call: git config
 ```
---global credential.helper wincred
+git config --global credential.helper wincred
 ```
